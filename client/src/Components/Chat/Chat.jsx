@@ -179,7 +179,7 @@ class Chat extends Component {
                             </Flex>
                         </MenuButton>
                         <MenuList border="1px solid" borderColor="gray.200" boxShadow="lg" borderRadius="md" bg="white">
-                            <MenuItem as={Link} to="/users" icon={<FaUserCog />} _hover={{ bg: "gray.100" }}>
+                            <MenuItem as={Link} to="/users" icon={<FaUserCog />} _hover={{ bg: "gray.100" }} size={"sm"}>
                                 <Text fontWeight="small">User Management</Text>
                             </MenuItem>
                         </MenuList>

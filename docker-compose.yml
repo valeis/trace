@@ -31,10 +31,21 @@ services:
       - redis-data:/data
     ports:
       - "6380:6379"
+  redis-stack:
+    image: redis/redis-stack-server:latest
+    networks:
+      - trace-network
+    container_name: redis-stack
+    volumes:
+      - redis-stack-data:/data
+    ports:
+      - "6379:6379"
 volumes:
   postgres-db:
     driver: local
   redis-data:
+    driver: local
+  redis-stack-data:
     driver: local
 networks:
   trace-network:
