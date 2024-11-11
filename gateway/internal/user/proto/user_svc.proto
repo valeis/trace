@@ -1,0 +1,17 @@
+syntax = "proto3";
+option go_package = "./pb";
+
+package proto;
+
+import "user_msg.proto";
+
+service UserService{
+  rpc DeleteUser(DeleteUserRequest) returns (UserResponseMessage);
+  rpc GetUserByEmail(GetUserByEmailRequest) returns (GetUserByEmailResponse);
+  rpc GetUserEmailById(GetUserEmailByIdRequest) returns (GetUserEmailByIdResponse);
+  rpc UpdateUser(UpdateUserRequest) returns (UserResponseMessage);
+  rpc GetAllUsers(GetUsersRequest) returns (GetUsersResponse);
+  rpc AddAdmin(AddAdminRequest) returns (UserResponseMessage);
+  rpc SetUserRole(SetUserRoleRequest) returns (UserResponseMessage);
+  rpc CreateUser(CreateUserRequest) returns (UserResponseMessage);
+}

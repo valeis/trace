@@ -1,0 +1,41 @@
+syntax = "proto3";
+option go_package = "./pb";
+package proto;
+
+message UserCredentials{
+  string email = 1;
+  string password = 2;
+}
+
+message ResponseMessage {
+  string message = 1;
+}
+
+message UserInfo {
+  string email = 1;
+  string role = 2;
+}
+
+message Tokens {
+  string access_token = 1;
+  string refresh_token = 2;
+  string userId = 3;
+}
+
+message RefreshRequest {
+  string token = 1;
+}
+
+message RefreshResponse {
+  map<string, string> tokens = 1;
+}
+
+message Token {
+  string token = 1;
+}
+
+message ValidateTokenResponse {
+  string token = 1;
+  string email = 2;
+}
+

@@ -1,0 +1,8 @@
+grpc_port: 50053
+
+postgres:
+  user: admin
+  password: pass
+  host: localhost
+  port: 5440
+  db_name: trace-db

@@ -1,0 +1,22 @@
+grpc_port: 50052
+
+postgres:
+  user: admin
+  password: pass
+  host: localhost
+  port: 5440
+  db_name: trace-db
+
+redis:
+  host: localhost
+  port: :6380
+  password: redispass
+  db: 0
+
+tokens:
+  T_KEY: eyJhbGciOiJIU
+  RT_KEY: tetetepolsvbJk
+
+gateway:
+  host: localhost
+  port: :1337

@@ -1,0 +1,6 @@
+security_port: security_port:50052
+user_port: localhost:50053
+http_port: 1337
+short_timeout: 3
+long_timeout: 5
+chat_service_url: "http://localhost:8080/"
